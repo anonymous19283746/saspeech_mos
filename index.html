@@ -49,6 +49,7 @@
                 <input class="form-control" type="text" inputmode="email" placeholder="account@example.com" name="mail">
                 <small class="form-text text-muted">האימייל שלך</small>
             </div>
+            <div id="questions">
             
     
         <div class="card form-group">
@@ -1633,6 +1634,7 @@
         </div>
     
 
+            </div>
             <input type="text" name="formid" value="1" hidden>
             <input type="text" name="thank" value="תודה！" hidden>
             <input class="btn btn-info btn-lg" type="submit" value="הגש" id="submitBtn">
@@ -1640,6 +1642,7 @@
                 <small>כשסיימת למלא את כל הטופס</small>
             </p>
         </form>
+        <button class="btn btn-lg" onclick="shuffleForm();">ערבל את הסדר</button>
     </div>
 
     <div class="container" style="padding-top: 60px;">
@@ -1652,6 +1655,23 @@
             setTimeout("submitBtn.disabled=false;", 5000);
             return true;
         };
+
+        function shuffle(a) {
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+
+        function shuffleForm() {
+            let formItems = document.getElementsByClassName("card form-group");
+            let formArray = Array.from(formItems);
+            formArray.forEach((e) => e.remove());
+            shuffle(formArray);
+            let questions = document.getElementById("questions");
+            formArray.forEach((e) => questions.appendChild(e));
+        }
     </script>
 </body>
 
