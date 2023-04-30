@@ -1,0 +1,1654 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>MOS רובו-שאול</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+</head>
+
+<body dir="rtl">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            
+    <h1 class="display-4">מבחן איכות שמע</h1>
+    <p class="lead">合מילים</p>
+    <hr class="my-4">
+    <p>
+        感謝您參與本次實驗！
+    </p>
+    <p>
+        בשאלון הקרוב תתבקשו לדרג את איכות השמע בקטעי דיבור קצרים שעברו עיבוד. ציון איכות השמע תהיה בין 1 (גרוע) ל-5 (מצויין), כאשר:
+        <ul>
+            <li>ציון 1 - גרוע - אם יש הפרעות מאוד מציקות</li>
+            <li>ציון 2 - רע - אם יש יש הפרעות מציקות</li>
+            <li>ציון 3 - בינוני - אם יש הפרעות קצת מציקות</li>
+            <li>ציון 4 - טוב - אם יש הפרעות שניתן לשמוע אבל לא מציקות</li>
+            <li>ציון 5 - מצויין - אם לא ניתן לשמוע הפרעות</li>
+        </ul>
+    </p>
+
+        </div>
+    </div>
+
+    <div class="container" id="form_container">
+        <form id="theForm" action="http://localhost:8888" method="GET" onsubmit="return preventRepeatedSubmission();">
+            <div class="form-group">
+                <label for="name">שם：</label>
+                <input class="form-control" type="text" inputmode="text" name="name" required>
+                <small class="form-text text-muted">שפ</small>
+            </div>
+            <div class="form-group">
+                <label for="mail">מייל：</label>
+                <input class="form-control" type="text" inputmode="email" placeholder="account@example.com" name="mail">
+                <small class="form-text text-muted">האימייל שלך</small>
+            </div>
+            
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 1</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Aharon Fogel_0002.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002.wav" id="q_Aharon-Fogel_0002.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002.wav" id="q_Aharon-Fogel_0002.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002.wav" id="q_Aharon-Fogel_0002.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002.wav" id="q_Aharon-Fogel_0002.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002.wav" id="q_Aharon-Fogel_0002.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 2</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Aharon Fogel_0002_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002_tts.wav" id="q_Aharon-Fogel_0002_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002_tts.wav" id="q_Aharon-Fogel_0002_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002_tts.wav" id="q_Aharon-Fogel_0002_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002_tts.wav" id="q_Aharon-Fogel_0002_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002_tts.wav" id="q_Aharon-Fogel_0002_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 3</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Aharon Fogel_0002_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002_vocoder.wav" id="q_Aharon-Fogel_0002_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002_vocoder.wav" id="q_Aharon-Fogel_0002_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002_vocoder.wav" id="q_Aharon-Fogel_0002_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002_vocoder.wav" id="q_Aharon-Fogel_0002_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Aharon-Fogel_0002_vocoder.wav" id="q_Aharon-Fogel_0002_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Aharon-Fogel_0002_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 4</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Corona4_0007.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007.wav" id="q_Corona4_0007.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Corona4_0007.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007.wav" id="q_Corona4_0007.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Corona4_0007.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007.wav" id="q_Corona4_0007.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Corona4_0007.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007.wav" id="q_Corona4_0007.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Corona4_0007.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007.wav" id="q_Corona4_0007.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Corona4_0007.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 5</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Corona4_0007_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007_tts.wav" id="q_Corona4_0007_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Corona4_0007_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007_tts.wav" id="q_Corona4_0007_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Corona4_0007_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007_tts.wav" id="q_Corona4_0007_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Corona4_0007_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007_tts.wav" id="q_Corona4_0007_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Corona4_0007_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007_tts.wav" id="q_Corona4_0007_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Corona4_0007_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 6</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Corona4_0007_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007_vocoder.wav" id="q_Corona4_0007_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Corona4_0007_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007_vocoder.wav" id="q_Corona4_0007_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Corona4_0007_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007_vocoder.wav" id="q_Corona4_0007_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Corona4_0007_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007_vocoder.wav" id="q_Corona4_0007_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Corona4_0007_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Corona4_0007_vocoder.wav" id="q_Corona4_0007_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Corona4_0007_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 7</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Credit Rating_0006.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006.wav" id="q_Credit-Rating_0006.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006.wav" id="q_Credit-Rating_0006.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006.wav" id="q_Credit-Rating_0006.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006.wav" id="q_Credit-Rating_0006.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006.wav" id="q_Credit-Rating_0006.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 8</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Credit Rating_0006_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006_tts.wav" id="q_Credit-Rating_0006_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006_tts.wav" id="q_Credit-Rating_0006_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006_tts.wav" id="q_Credit-Rating_0006_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006_tts.wav" id="q_Credit-Rating_0006_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006_tts.wav" id="q_Credit-Rating_0006_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 9</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Credit Rating_0006_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006_vocoder.wav" id="q_Credit-Rating_0006_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006_vocoder.wav" id="q_Credit-Rating_0006_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006_vocoder.wav" id="q_Credit-Rating_0006_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006_vocoder.wav" id="q_Credit-Rating_0006_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Credit-Rating_0006_vocoder.wav" id="q_Credit-Rating_0006_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Credit-Rating_0006_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 10</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Electricity_0001.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001.wav" id="q_Electricity_0001.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Electricity_0001.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001.wav" id="q_Electricity_0001.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Electricity_0001.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001.wav" id="q_Electricity_0001.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Electricity_0001.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001.wav" id="q_Electricity_0001.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Electricity_0001.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001.wav" id="q_Electricity_0001.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Electricity_0001.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 11</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Electricity_0001_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001_tts.wav" id="q_Electricity_0001_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Electricity_0001_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001_tts.wav" id="q_Electricity_0001_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Electricity_0001_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001_tts.wav" id="q_Electricity_0001_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Electricity_0001_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001_tts.wav" id="q_Electricity_0001_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Electricity_0001_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001_tts.wav" id="q_Electricity_0001_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Electricity_0001_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 12</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Electricity_0001_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001_vocoder.wav" id="q_Electricity_0001_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Electricity_0001_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001_vocoder.wav" id="q_Electricity_0001_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Electricity_0001_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001_vocoder.wav" id="q_Electricity_0001_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Electricity_0001_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001_vocoder.wav" id="q_Electricity_0001_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Electricity_0001_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Electricity_0001_vocoder.wav" id="q_Electricity_0001_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Electricity_0001_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 13</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Gedera_0019.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019.wav" id="q_Gedera_0019.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Gedera_0019.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019.wav" id="q_Gedera_0019.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Gedera_0019.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019.wav" id="q_Gedera_0019.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Gedera_0019.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019.wav" id="q_Gedera_0019.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Gedera_0019.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019.wav" id="q_Gedera_0019.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Gedera_0019.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 14</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Gedera_0019_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019_tts.wav" id="q_Gedera_0019_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Gedera_0019_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019_tts.wav" id="q_Gedera_0019_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Gedera_0019_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019_tts.wav" id="q_Gedera_0019_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Gedera_0019_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019_tts.wav" id="q_Gedera_0019_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Gedera_0019_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019_tts.wav" id="q_Gedera_0019_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Gedera_0019_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 15</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Gedera_0019_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019_vocoder.wav" id="q_Gedera_0019_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Gedera_0019_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019_vocoder.wav" id="q_Gedera_0019_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Gedera_0019_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019_vocoder.wav" id="q_Gedera_0019_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Gedera_0019_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019_vocoder.wav" id="q_Gedera_0019_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Gedera_0019_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Gedera_0019_vocoder.wav" id="q_Gedera_0019_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Gedera_0019_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 16</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Hashlama112_0024.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024.wav" id="q_Hashlama112_0024.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024.wav" id="q_Hashlama112_0024.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024.wav" id="q_Hashlama112_0024.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024.wav" id="q_Hashlama112_0024.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024.wav" id="q_Hashlama112_0024.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 17</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Hashlama112_0024_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024_tts.wav" id="q_Hashlama112_0024_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024_tts.wav" id="q_Hashlama112_0024_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024_tts.wav" id="q_Hashlama112_0024_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024_tts.wav" id="q_Hashlama112_0024_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024_tts.wav" id="q_Hashlama112_0024_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 18</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Hashlama112_0024_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024_vocoder.wav" id="q_Hashlama112_0024_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024_vocoder.wav" id="q_Hashlama112_0024_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024_vocoder.wav" id="q_Hashlama112_0024_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024_vocoder.wav" id="q_Hashlama112_0024_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama112_0024_vocoder.wav" id="q_Hashlama112_0024_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Hashlama112_0024_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 19</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Hashlama117_0009.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009.wav" id="q_Hashlama117_0009.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009.wav" id="q_Hashlama117_0009.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009.wav" id="q_Hashlama117_0009.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009.wav" id="q_Hashlama117_0009.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009.wav" id="q_Hashlama117_0009.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 20</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Hashlama117_0009_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009_tts.wav" id="q_Hashlama117_0009_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009_tts.wav" id="q_Hashlama117_0009_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009_tts.wav" id="q_Hashlama117_0009_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009_tts.wav" id="q_Hashlama117_0009_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009_tts.wav" id="q_Hashlama117_0009_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 21</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Hashlama117_0009_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009_vocoder.wav" id="q_Hashlama117_0009_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009_vocoder.wav" id="q_Hashlama117_0009_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009_vocoder.wav" id="q_Hashlama117_0009_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009_vocoder.wav" id="q_Hashlama117_0009_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hashlama117_0009_vocoder.wav" id="q_Hashlama117_0009_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Hashlama117_0009_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 22</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Hedva_0035.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035.wav" id="q_Hedva_0035.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Hedva_0035.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035.wav" id="q_Hedva_0035.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Hedva_0035.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035.wav" id="q_Hedva_0035.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Hedva_0035.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035.wav" id="q_Hedva_0035.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Hedva_0035.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035.wav" id="q_Hedva_0035.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Hedva_0035.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 23</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Hedva_0035_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035_tts.wav" id="q_Hedva_0035_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Hedva_0035_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035_tts.wav" id="q_Hedva_0035_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Hedva_0035_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035_tts.wav" id="q_Hedva_0035_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Hedva_0035_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035_tts.wav" id="q_Hedva_0035_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Hedva_0035_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035_tts.wav" id="q_Hedva_0035_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Hedva_0035_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 24</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Hedva_0035_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035_vocoder.wav" id="q_Hedva_0035_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Hedva_0035_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035_vocoder.wav" id="q_Hedva_0035_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Hedva_0035_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035_vocoder.wav" id="q_Hedva_0035_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Hedva_0035_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035_vocoder.wav" id="q_Hedva_0035_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Hedva_0035_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hedva_0035_vocoder.wav" id="q_Hedva_0035_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Hedva_0035_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 25</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Hungary1_0068.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068.wav" id="q_Hungary1_0068.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Hungary1_0068.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068.wav" id="q_Hungary1_0068.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Hungary1_0068.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068.wav" id="q_Hungary1_0068.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Hungary1_0068.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068.wav" id="q_Hungary1_0068.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Hungary1_0068.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068.wav" id="q_Hungary1_0068.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Hungary1_0068.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 26</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Hungary1_0068_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068_tts.wav" id="q_Hungary1_0068_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Hungary1_0068_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068_tts.wav" id="q_Hungary1_0068_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Hungary1_0068_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068_tts.wav" id="q_Hungary1_0068_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Hungary1_0068_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068_tts.wav" id="q_Hungary1_0068_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Hungary1_0068_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068_tts.wav" id="q_Hungary1_0068_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Hungary1_0068_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 27</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Hungary1_0068_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068_vocoder.wav" id="q_Hungary1_0068_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Hungary1_0068_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068_vocoder.wav" id="q_Hungary1_0068_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Hungary1_0068_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068_vocoder.wav" id="q_Hungary1_0068_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Hungary1_0068_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068_vocoder.wav" id="q_Hungary1_0068_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Hungary1_0068_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Hungary1_0068_vocoder.wav" id="q_Hungary1_0068_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Hungary1_0068_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 28</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Lod_0053.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053.wav" id="q_Lod_0053.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Lod_0053.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053.wav" id="q_Lod_0053.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Lod_0053.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053.wav" id="q_Lod_0053.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Lod_0053.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053.wav" id="q_Lod_0053.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Lod_0053.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053.wav" id="q_Lod_0053.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Lod_0053.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 29</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Lod_0053_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053_tts.wav" id="q_Lod_0053_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Lod_0053_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053_tts.wav" id="q_Lod_0053_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Lod_0053_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053_tts.wav" id="q_Lod_0053_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Lod_0053_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053_tts.wav" id="q_Lod_0053_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Lod_0053_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053_tts.wav" id="q_Lod_0053_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Lod_0053_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 30</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Lod_0053_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053_vocoder.wav" id="q_Lod_0053_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Lod_0053_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053_vocoder.wav" id="q_Lod_0053_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Lod_0053_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053_vocoder.wav" id="q_Lod_0053_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Lod_0053_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053_vocoder.wav" id="q_Lod_0053_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Lod_0053_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0053_vocoder.wav" id="q_Lod_0053_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Lod_0053_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 31</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Lod_0065.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065.wav" id="q_Lod_0065.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Lod_0065.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065.wav" id="q_Lod_0065.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Lod_0065.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065.wav" id="q_Lod_0065.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Lod_0065.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065.wav" id="q_Lod_0065.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Lod_0065.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065.wav" id="q_Lod_0065.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Lod_0065.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 32</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Lod_0065_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065_tts.wav" id="q_Lod_0065_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Lod_0065_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065_tts.wav" id="q_Lod_0065_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Lod_0065_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065_tts.wav" id="q_Lod_0065_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Lod_0065_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065_tts.wav" id="q_Lod_0065_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Lod_0065_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065_tts.wav" id="q_Lod_0065_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Lod_0065_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 33</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Lod_0065_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065_vocoder.wav" id="q_Lod_0065_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Lod_0065_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065_vocoder.wav" id="q_Lod_0065_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Lod_0065_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065_vocoder.wav" id="q_Lod_0065_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Lod_0065_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065_vocoder.wav" id="q_Lod_0065_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Lod_0065_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Lod_0065_vocoder.wav" id="q_Lod_0065_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Lod_0065_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 34</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Meat_0039.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039.wav" id="q_Meat_0039.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Meat_0039.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039.wav" id="q_Meat_0039.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Meat_0039.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039.wav" id="q_Meat_0039.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Meat_0039.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039.wav" id="q_Meat_0039.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Meat_0039.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039.wav" id="q_Meat_0039.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Meat_0039.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 35</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Meat_0039_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039_tts.wav" id="q_Meat_0039_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Meat_0039_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039_tts.wav" id="q_Meat_0039_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Meat_0039_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039_tts.wav" id="q_Meat_0039_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Meat_0039_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039_tts.wav" id="q_Meat_0039_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Meat_0039_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039_tts.wav" id="q_Meat_0039_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Meat_0039_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 36</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Meat_0039_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039_vocoder.wav" id="q_Meat_0039_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Meat_0039_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039_vocoder.wav" id="q_Meat_0039_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Meat_0039_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039_vocoder.wav" id="q_Meat_0039_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Meat_0039_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039_vocoder.wav" id="q_Meat_0039_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Meat_0039_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0039_vocoder.wav" id="q_Meat_0039_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Meat_0039_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 37</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Meat_0089.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089.wav" id="q_Meat_0089.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Meat_0089.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089.wav" id="q_Meat_0089.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Meat_0089.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089.wav" id="q_Meat_0089.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Meat_0089.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089.wav" id="q_Meat_0089.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Meat_0089.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089.wav" id="q_Meat_0089.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Meat_0089.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 38</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Meat_0089_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089_tts.wav" id="q_Meat_0089_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Meat_0089_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089_tts.wav" id="q_Meat_0089_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Meat_0089_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089_tts.wav" id="q_Meat_0089_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Meat_0089_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089_tts.wav" id="q_Meat_0089_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Meat_0089_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089_tts.wav" id="q_Meat_0089_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Meat_0089_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 39</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Meat_0089_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089_vocoder.wav" id="q_Meat_0089_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Meat_0089_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089_vocoder.wav" id="q_Meat_0089_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Meat_0089_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089_vocoder.wav" id="q_Meat_0089_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Meat_0089_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089_vocoder.wav" id="q_Meat_0089_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Meat_0089_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Meat_0089_vocoder.wav" id="q_Meat_0089_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Meat_0089_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 40</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Mom3_0007.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007.wav" id="q_Mom3_0007.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Mom3_0007.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007.wav" id="q_Mom3_0007.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Mom3_0007.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007.wav" id="q_Mom3_0007.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Mom3_0007.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007.wav" id="q_Mom3_0007.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Mom3_0007.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007.wav" id="q_Mom3_0007.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Mom3_0007.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 41</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Mom3_0007_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007_tts.wav" id="q_Mom3_0007_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Mom3_0007_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007_tts.wav" id="q_Mom3_0007_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Mom3_0007_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007_tts.wav" id="q_Mom3_0007_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Mom3_0007_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007_tts.wav" id="q_Mom3_0007_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Mom3_0007_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007_tts.wav" id="q_Mom3_0007_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Mom3_0007_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 42</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Mom3_0007_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007_vocoder.wav" id="q_Mom3_0007_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Mom3_0007_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007_vocoder.wav" id="q_Mom3_0007_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Mom3_0007_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007_vocoder.wav" id="q_Mom3_0007_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Mom3_0007_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007_vocoder.wav" id="q_Mom3_0007_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Mom3_0007_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Mom3_0007_vocoder.wav" id="q_Mom3_0007_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Mom3_0007_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 43</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Robo Shaul 1_0017.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017.wav" id="q_Robo-Shaul-1_0017.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017.wav" id="q_Robo-Shaul-1_0017.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017.wav" id="q_Robo-Shaul-1_0017.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017.wav" id="q_Robo-Shaul-1_0017.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017.wav" id="q_Robo-Shaul-1_0017.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 44</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Robo Shaul 1_0017_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017_tts.wav" id="q_Robo-Shaul-1_0017_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017_tts.wav" id="q_Robo-Shaul-1_0017_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017_tts.wav" id="q_Robo-Shaul-1_0017_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017_tts.wav" id="q_Robo-Shaul-1_0017_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017_tts.wav" id="q_Robo-Shaul-1_0017_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 45</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Robo Shaul 1_0017_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017_vocoder.wav" id="q_Robo-Shaul-1_0017_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017_vocoder.wav" id="q_Robo-Shaul-1_0017_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017_vocoder.wav" id="q_Robo-Shaul-1_0017_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017_vocoder.wav" id="q_Robo-Shaul-1_0017_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0017_vocoder.wav" id="q_Robo-Shaul-1_0017_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0017_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 46</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Robo Shaul 1_0065.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065.wav" id="q_Robo-Shaul-1_0065.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065.wav" id="q_Robo-Shaul-1_0065.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065.wav" id="q_Robo-Shaul-1_0065.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065.wav" id="q_Robo-Shaul-1_0065.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065.wav" id="q_Robo-Shaul-1_0065.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 47</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Robo Shaul 1_0065_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065_tts.wav" id="q_Robo-Shaul-1_0065_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065_tts.wav" id="q_Robo-Shaul-1_0065_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065_tts.wav" id="q_Robo-Shaul-1_0065_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065_tts.wav" id="q_Robo-Shaul-1_0065_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065_tts.wav" id="q_Robo-Shaul-1_0065_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 48</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Robo Shaul 1_0065_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065_vocoder.wav" id="q_Robo-Shaul-1_0065_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065_vocoder.wav" id="q_Robo-Shaul-1_0065_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065_vocoder.wav" id="q_Robo-Shaul-1_0065_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065_vocoder.wav" id="q_Robo-Shaul-1_0065_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-1_0065_vocoder.wav" id="q_Robo-Shaul-1_0065_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-1_0065_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 49</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Robo Shaul 2_0040.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040.wav" id="q_Robo-Shaul-2_0040.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040.wav" id="q_Robo-Shaul-2_0040.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040.wav" id="q_Robo-Shaul-2_0040.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040.wav" id="q_Robo-Shaul-2_0040.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040.wav" id="q_Robo-Shaul-2_0040.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 50</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Robo Shaul 2_0040_tts.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040_tts.wav" id="q_Robo-Shaul-2_0040_tts.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040_tts.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040_tts.wav" id="q_Robo-Shaul-2_0040_tts.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040_tts.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040_tts.wav" id="q_Robo-Shaul-2_0040_tts.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040_tts.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040_tts.wav" id="q_Robo-Shaul-2_0040_tts.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040_tts.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040_tts.wav" id="q_Robo-Shaul-2_0040_tts.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040_tts.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card form-group">
+            <div class="card-header">שמע 51</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples_mos/Robo Shaul 2_0040_vocoder.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040_vocoder.wav" id="q_Robo-Shaul-2_0040_vocoder.wav_1" value="5" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040_vocoder.wav_1">מצויין</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040_vocoder.wav" id="q_Robo-Shaul-2_0040_vocoder.wav_2" value="4" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040_vocoder.wav_2">４（טוב）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040_vocoder.wav" id="q_Robo-Shaul-2_0040_vocoder.wav_3" value="3" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040_vocoder.wav_3">３（בינוני）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040_vocoder.wav" id="q_Robo-Shaul-2_0040_vocoder.wav_4" value="2" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040_vocoder.wav_4">２（רע）</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q_Robo-Shaul-2_0040_vocoder.wav" id="q_Robo-Shaul-2_0040_vocoder.wav_5" value="1" required>
+                    <label class="form-check-label" for="q_Robo-Shaul-2_0040_vocoder.wav_5">１（גרוע）</label>
+                </div>
+            </div>
+        </div>
+    
+
+            <input type="text" name="formid" value="1" hidden>
+            <input type="text" name="thank" value="תודה！" hidden>
+            <input class="btn btn-info btn-lg" type="submit" value="הגש" id="submitBtn">
+            <p class="text-muted">
+                <small>כשסיימת למלא את כל הטופס</small>
+            </p>
+        </form>
+    </div>
+
+    <div class="container" style="padding-top: 60px;">
+        <p class="text-center text-muted">&copy; רובו-שאול</p>
+    </div>
+
+    <script type="text/javascript">
+        function preventRepeatedSubmission() {
+            document.getElementById('submitBtn').disabled = true;
+            setTimeout("submitBtn.disabled=false;", 5000);
+            return true;
+        };
+    </script>
+</body>
+
+</html>
