@@ -44,7 +44,7 @@
                 <small>כשסיימת למלא את כל הטופס</small>
             </p>
         </form>
-        <button class="btn btn-lg" onclick="shuffleForm();">ערבל את הסדר</button>
+        <!-- <button class="btn btn-lg btn-info" onclick="shuffleForm();">ערבל את הסדר</button> -->
     </div>
 
     <div class="container" style="padding-top: 60px;">
@@ -74,6 +74,7 @@
             let questions = document.getElementById("questions");
             formArray.forEach((e) => questions.appendChild(e));
         }
+        window.addEventListener('DOMContentLoaded', (e) => shuffleForm());
     </script>
 </body>
 
